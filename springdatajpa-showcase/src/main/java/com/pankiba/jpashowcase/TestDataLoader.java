@@ -13,7 +13,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pankiba.jpashowcase.domain.Employee;
 import com.pankiba.jpashowcase.service.EmployeeService;
-import com.pankiba.utils.displaytable.DisplayTableUtil;
+import com.pankiba.jpashowcase.util.DisplayTableUtil;
 
 import lombok.extern.slf4j.Slf4j;
 

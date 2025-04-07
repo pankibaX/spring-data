@@ -61,13 +61,6 @@
 			<artifactId>lombok</artifactId>
 		</dependency>
 
-		<!-- Common Utility Classes -->
-		<dependency>
-			<groupId>com.pankiba</groupId>
-			<artifactId>common-utils</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-
 	</dependencies>
 
 </project>

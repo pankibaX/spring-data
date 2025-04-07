@@ -11,7 +11,7 @@ import com.pankiba.onetooneforeignkeyasso.domain.Address;
 import com.pankiba.onetooneforeignkeyasso.domain.Employee;
 import com.pankiba.onetooneforeignkeyasso.domain.Grade;
 import com.pankiba.onetooneforeignkeyasso.service.EmployeeService;
-import com.pankiba.utils.displaytable.DisplayTableUtil;
+import com.pankiba.onetooneforeignkeyasso.util.DisplayTableUtil;
 
 import lombok.extern.slf4j.Slf4j;
 

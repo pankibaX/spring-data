@@ -13,7 +13,7 @@ import com.pankiba.manytomanyextracolumn.domain.Employee;
 import com.pankiba.manytomanyextracolumn.domain.Grade;
 import com.pankiba.manytomanyextracolumn.domain.Project;
 import com.pankiba.manytomanyextracolumn.service.EmployeeService;
-import com.pankiba.utils.displaytable.DisplayTableUtil;
+import com.pankiba.manytomanyextracolumn.util.DisplayTableUtil;
 
 import lombok.extern.slf4j.Slf4j;
 

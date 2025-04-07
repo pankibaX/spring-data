@@ -14,7 +14,7 @@ import com.pankiba.manytomany.domain.Employee;
 import com.pankiba.manytomany.domain.Grade;
 import com.pankiba.manytomany.domain.Project;
 import com.pankiba.manytomany.service.EmployeeService;
-import com.pankiba.utils.displaytable.DisplayTableUtil;
+import com.pankiba.manytomany.util.DisplayTableUtil;
 
 import lombok.extern.slf4j.Slf4j;
 
