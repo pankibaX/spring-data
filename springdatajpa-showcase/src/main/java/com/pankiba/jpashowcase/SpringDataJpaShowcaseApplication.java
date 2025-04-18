@@ -22,8 +22,8 @@ public class SpringDataJpaShowcaseApplication {
 		log.info("Type of web application : " + springApplication.getWebApplicationType());
 
 		/*
-		 * setting default profile as DEV if no other profile is configured. This needs
-		 * to be done before calling run method on SpringApplication
+		 * setting default profile as DEV if no other profile is configured. This needs to be done before calling run
+		 * method on SpringApplication
 		 */
 
 		ApplicationUtils.setDefautlProfile(springApplication);

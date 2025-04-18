@@ -43,7 +43,7 @@ public class DisplayTableUtil {
 			for (int i = 0; i < tableData.size(); i++) {
 				int width = 0;
 				for (String columnName : columnNames) {
-					
+
 					if (tableData.get(i).get(columnName).toString().length() > widthMap.get(columnName)) {
 						width = tableData.get(i).get(columnName).toString().length();
 						widthMap.put(columnName, width);
@@ -113,7 +113,7 @@ public class DisplayTableUtil {
 
 		System.out.println(coverLine);
 	}
-	
+
 	public static int countRowsInTable(JdbcTemplate jdbcTemplate, String tableName) {
 		Integer result = jdbcTemplate.queryForObject("SELECT COUNT(0) FROM " + tableName, Integer.class);
 		return (result != null ? result : 0);

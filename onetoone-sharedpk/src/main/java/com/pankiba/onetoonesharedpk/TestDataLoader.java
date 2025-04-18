@@ -17,17 +17,17 @@ import lombok.extern.slf4j.Slf4j;
 
 @Component
 @Slf4j
-public class TestDataLoader implements CommandLineRunner{
-	
+public class TestDataLoader implements CommandLineRunner {
+
 	@Autowired
 	private EmployeeService employeeService;
-	
+
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
 	@Override
 	public void run(String... args) throws Exception {
-		
+
 		log.info("Loading test data.....");
 
 		Employee employee1 = new Employee("John", "McLane", "M", "john.rambo@users.noreply.github.com",
@@ -43,15 +43,15 @@ public class TestDataLoader implements CommandLineRunner{
 		Employee employe2 = new Employee("Ethan", "Hunt", "M", "ethan.hunt@users.noreply.github.com",
 				LocalDate.parse("1982-09-26"), LocalDate.parse("2005-07-21"), Grade.Lead, 30000L);
 
-		Address employeeAddress2 =  new Address("Ten Avenue", "Bhopal", "MP");
+		Address employeeAddress2 = new Address("Ten Avenue", "Bhopal", "MP");
 		employe2.setEmployeeAddress(employeeAddress2);
 		employeeAddress2.setEmployee(employe2);
 
 		employeeService.saveEmployee(employe2);
-		
-		DisplayTableUtil.printSelect(jdbcTemplate, "SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, GENDER, EMAIL, BIRTH_DATE, JOINING_DATE, GRADE, SALARY FROM EMPLOYEE");
+
+		DisplayTableUtil.printSelect(jdbcTemplate,
+				"SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, GENDER, EMAIL, BIRTH_DATE, JOINING_DATE, GRADE, SALARY FROM EMPLOYEE");
 		DisplayTableUtil.printSelect(jdbcTemplate, "SELECT EMPLOYEE_ADDRESS_ID, STREET, CITY, STATE FROM ADDRESS");
-		
 
 	}
 

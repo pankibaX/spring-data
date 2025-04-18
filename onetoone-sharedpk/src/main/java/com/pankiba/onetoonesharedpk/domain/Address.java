@@ -37,11 +37,10 @@ public class Address implements Serializable {
 	private String state;
 
 	/**
-	 * The @MapsId annotation tells Hibernate/JPA to use the primary key value of
-	 * the Employee entity as the primary key value of the EmployeeDetails entity.
+	 * The @MapsId annotation tells Hibernate/JPA to use the primary key value of the Employee entity as the primary key
+	 * value of the EmployeeDetails entity.
 	 *
-	 * @JoinColumn defines foreign key column and indicates the owner of the
-	 *             relationship.
+	 * @JoinColumn defines foreign key column and indicates the owner of the relationship.
 	 */
 	@OneToOne(fetch = FetchType.LAZY)
 	@MapsId

@@ -71,8 +71,8 @@ public class Employee implements Serializable {
 	public Employee() {
 	}
 
-	public Employee(String firstName, String lastName, String gender, String email, LocalDate birthDate, LocalDate joiningDate,
-			Grade grade, Long salary) {
+	public Employee(String firstName, String lastName, String gender, String email, LocalDate birthDate,
+			LocalDate joiningDate, Grade grade, Long salary) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.gender = gender;

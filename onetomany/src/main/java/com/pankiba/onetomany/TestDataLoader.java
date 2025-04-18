@@ -51,18 +51,16 @@ public class TestDataLoader implements CommandLineRunner {
 		DisplayTableUtil.printSelect(jdbcTemplate, "SELECT BUSINESS_UNIT_ID, BUSINESS_UNIT_NAME FROM BUSINESS_UNIT");
 
 		/**
-		 * This will execute one query with join to fetch Employee data with
-		 * BusinessUnit as well. Because, ManyToOne association's ( from Employee to
-		 * Business ) fetching strategy is by default set to FetchType.EAGER, to load
+		 * This will execute one query with join to fetch Employee data with BusinessUnit as well. Because, ManyToOne
+		 * association's ( from Employee to Business ) fetching strategy is by default set to FetchType.EAGER, to load
 		 * data eagerly.
 		 */
 		log.info("FindEmployeeById");
 		employeeService.findEmployeeById(5002L);
 
 		/**
-		 * This will execute only one query to fetch BusinessUnit data. Because,
-		 * OneToMany association's ( from Business to Employee ) fetching strategy is by
-		 * default set to FetchType.LAZY, to load data lazily.
+		 * This will execute only one query to fetch BusinessUnit data. Because, OneToMany association's ( from Business
+		 * to Employee ) fetching strategy is by default set to FetchType.LAZY, to load data lazily.
 		 */
 
 		log.info("FindBusinessUnitById");

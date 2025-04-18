@@ -3,7 +3,11 @@ package com.pankiba.jpashowcase.web.rest;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -12,6 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.pankiba.jpashowcase.domain.Employee;
@@ -44,7 +49,6 @@ public class DataJpaShowCaseResource {
 
 		log.info("Read - Single Entity");
 		Employee employee = employeeService.findEmployee(employeeId);
-		DisplayTableUtil.printSelect(jdbcTemplate, "SELECT * FROM EMPLOYEE WHERE EMPLOYEE_ID = " + employeeId);
 
 		return new ResponseEntity<Employee>(employee, HttpStatus.OK);
 	}
@@ -53,10 +57,23 @@ public class DataJpaShowCaseResource {
 	public ResponseEntity<List<Employee>> findAEmployees() {
 
 		log.info("Read - All Entities");
-		List<Employee> employeeList = employeeService.findEmployees();
-		DisplayTableUtil.printSelect(jdbcTemplate, "SELECT * FROM EMPLOYEE");
+
+		List<Employee> employeeList = employeeService.findAllEmployeesJpql();
 
 		return new ResponseEntity<List<Employee>>(employeeList, HttpStatus.OK);
+	}
+
+	@GetMapping("/employees-pagination")
+	public ResponseEntity<Page<Employee>> findAEmployeesWithPagination(
+			@RequestParam(defaultValue = "0") Integer pageNumber, @RequestParam(defaultValue = "20") Integer pageSize) {
+
+		log.info("Read - All Entities with Paginatination");
+
+		Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(Direction.ASC, "employeeId"));
+
+		Page<Employee> employeeList = employeeService.findAllEmployeesWithPagination(pageable);
+
+		return new ResponseEntity<Page<Employee>>(employeeList, HttpStatus.OK);
 	}
 
 	@DeleteMapping("/employees")

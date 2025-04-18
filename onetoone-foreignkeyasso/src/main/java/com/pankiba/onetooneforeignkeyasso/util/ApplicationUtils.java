@@ -24,7 +24,7 @@ public class ApplicationUtils {
 	}
 
 	public static void logApplicationStartup(Environment environment) {
-		
+
 		String protocol = "http";
 
 		if (environment.getProperty("server.ssl.key-store") != null) {
@@ -63,9 +63,9 @@ public class ApplicationUtils {
 	 * @param springApplication
 	 */
 	public static void setDefautlProfile(SpringApplication springApplication) {
-		
+
 		log.info("Type of web application : " + springApplication.getWebApplicationType());
-		
+
 		Map<String, Object> defaultProperties = new HashMap<>();
 		defaultProperties.put(SPRING_PROFILE_DEFAULT, DEVELOPMENT_PROFILE);
 		springApplication.setDefaultProperties(defaultProperties);

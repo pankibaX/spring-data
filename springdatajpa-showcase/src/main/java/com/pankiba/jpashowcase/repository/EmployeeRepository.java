@@ -40,8 +40,7 @@ public interface EmployeeRepository extends BaseRepository<Employee, Long> {
 	@Query("SELECT emp FROM Employee emp where emp.salary = ?1")
 	List<Employee> findEmmplyeeBySalaryAndSort(Long salary, Sort sort);
 
-	// Using pagination in the JPQL query - HQL
-	@Query(value = "SELECT emp FROM Employee emp ORDER BY firstName")
-	Page<Employee> findAllEmployeesWithPagination(Pageable pageable);
+	// Using pagination
+	Page<Employee> findAll(Pageable pageable);
 
 }

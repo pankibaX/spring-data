@@ -95,7 +95,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public Page<Employee> findAllEmployeesWithPagination(Pageable pageable) {
-		return employeeRepository.findAllEmployeesWithPagination(pageable);
+		return employeeRepository.findAll(pageable);
 	}
 
 	@Override

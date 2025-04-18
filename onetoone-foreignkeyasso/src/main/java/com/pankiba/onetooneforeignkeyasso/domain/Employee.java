@@ -69,8 +69,8 @@ public class Employee implements Serializable {
 	@OneToOne(mappedBy = "employee", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Address employeeAddress;
 
-	public Employee(String firstName, String lastName, String gender, String email, LocalDate birthDate, LocalDate joiningDate,
-			Grade grade, Long salary) {
+	public Employee(String firstName, String lastName, String gender, String email, LocalDate birthDate,
+			LocalDate joiningDate, Grade grade, Long salary) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.gender = gender;

@@ -38,8 +38,7 @@ public class TestDataLoader implements CommandLineRunner {
 		List<Employee> employeeList = new ArrayList<>();
 
 		Employee employee1 = new Employee("John", "McLane", "M", "john.rambo@users.noreply.github.com",
-				parseDate("1970-07-30", "yyyy-MM-dd"), parseDate("2008-07-26", "yyyy-MM-dd"), Grade.Developer,
-				20000L);
+				parseDate("1970-07-30", "yyyy-MM-dd"), parseDate("2008-07-26", "yyyy-MM-dd"), Grade.Developer, 20000L);
 
 		Employee employee2 = new Employee("Ethan", "Hunt", "M", "ethan.hunt@users.noreply.github.com",
 				parseDate("1982-09-26", "yyyy-MM-dd"), parseDate("2005-07-21", "yyyy-MM-dd"), Grade.Lead, 30000L);
@@ -68,8 +67,7 @@ public class TestDataLoader implements CommandLineRunner {
 
 		DisplayTableUtil.printSelect(jdbcTemplate, "SELECT PROJECT_ID, NAME FROM PROJECT");
 
-		DisplayTableUtil.printSelect(jdbcTemplate,
-				"SELECT EMPLOYEE_ID, PROJECT_ID FROM EMPLOYEE_PROJECT");
+		DisplayTableUtil.printSelect(jdbcTemplate, "SELECT EMPLOYEE_ID, PROJECT_ID FROM EMPLOYEE_PROJECT");
 
 	}
 

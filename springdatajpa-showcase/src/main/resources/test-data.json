@@ -1,92 +1,502 @@
 [
-	{
-		"firstName": "John",
-		"lastName": "McLane",
-		"gender": "M",
-		"email": "john.mclane@users.noreply.github.com",
-		"birthDate": "1970-07-30",
-		"joiningDate": "2008-07-26",
-		"grade": "Developer",
-		"salary": 20000
-	},
-	{
-		"firstName": "Ethan",
-		"lastName": "Hunt",
-		"gender": "M",
-		"email": "ethan.hunt@@users.noreply.github.com",
-		"birthDate": "1982-09-26",
-		"joiningDate": "2005-07-21",
-		"grade": "Lead",
-		"salary": 30000
-	},
-	{
-		"firstName": "Jery",
-		"lastName": "Maguire",
-		"gender": "M",
-		"email": "jery.maguire@@users.noreply.github.com",
-		"birthDate": "1959-06-08",
-		"joiningDate": "1994-04-26",
-		"grade": "Lead",
-		"salary": 30000
-	},
-	{
-		"firstName": "Jack",
-		"lastName": "Sparrow",
-		"gender": "M",
-		"email": "jack.sparrow@users.noreply.github.com",
-		"birthDate": "1977-12-03",
-		"joiningDate": "1999-04-15",
-		"grade": "Developer",
-		"salary": 20000
-	},
-	{
-		"firstName": "Mary",
-		"lastName": "Poppins",
-		"gender": "F",
-		"email": "mary.poppins@users.noreply.github.com",
-		"birthDate": "1967-11-30",
-		"joiningDate": "1991-12-21",
-		"grade": "Developer",
-		"salary": 20000
-	},
-	{
-		"firstName": "Rocky",
-		"lastName": "Balboa",
-		"gender": "M",
-		"email": "rocky.balboa@users.noreply.github.com",
-		"birthDate": "1959-03-08",
-		"joiningDate": "1995-06-25",
-		"grade": "Architect",
-		"salary": 40000
-	},
-	{
-		"firstName": "James",
-		"lastName": "Bond",
-		"gender": "F",
-		"email": "sansa.stark@users.noreply.github.com",
-		"birthDate": "1991-08-17",
-		"joiningDate": "2017-05-14",
-		"grade": "Developer",
-		"salary": 20000
-	},
-	{
-		"firstName": "Jack",
-		"lastName": "Reacher",
-		"gender": "M",
-		"email": "jack.reacher@users.noreply.github.com",
-		"birthDate": "1985-04-19",
-		"joiningDate": "2007-07-29",
-		"grade": "Developer",
-		"salary": 20000
-	},
-	{
-		"firstName": "Vito",
-		"lastName": "Corleone",
-		"gender": "M",
-		"email": "vito.corleone@users.noreply.github.com",
-		"birthDate": "1991-03-27",
-		"joiningDate": "2017-03-02",
-		"grade": "Architect",
-		"salary": 40000
-	}
+  {
+    "firstName": "Douglas",
+    "lastName": "Hood",
+    "gender": "M",
+    "email": "paulacollins@hotmail.com",
+    "birthDate": "1932-10-12",
+    "joiningDate": "2023-06-17",
+    "grade": "Developer",
+    "salary": 89302
+  },
+  {
+    "firstName": "Rachel",
+    "lastName": "Johnson",
+    "gender": "F",
+    "email": "parkeralexa@yahoo.com",
+    "birthDate": "2014-05-16",
+    "joiningDate": "2023-01-28",
+    "grade": "Lead_Developer",
+    "salary": 66134
+  },
+  {
+    "firstName": "Eric",
+    "lastName": "Smith",
+    "gender": "M",
+    "email": "oking@gmail.com",
+    "birthDate": "1917-08-10",
+    "joiningDate": "2023-08-15",
+    "grade": "Manager",
+    "salary": 56928
+  },
+  {
+    "firstName": "Jacob",
+    "lastName": "Flores",
+    "gender": "M",
+    "email": "linleslie@hotmail.com",
+    "birthDate": "1994-12-16",
+    "joiningDate": "2024-11-07",
+    "grade": "Senior_Developer",
+    "salary": 74267
+  },
+  {
+    "firstName": "Justin",
+    "lastName": "Scott",
+    "gender": "M",
+    "email": "tapiachristopher@gmail.com",
+    "birthDate": "1932-11-28",
+    "joiningDate": "2024-05-11",
+    "grade": "Senior_Developer",
+    "salary": 72466
+  },
+  {
+    "firstName": "Shannon",
+    "lastName": "Ware",
+    "gender": "F",
+    "email": "ashley88@yahoo.com",
+    "birthDate": "1964-11-21",
+    "joiningDate": "2023-06-20",
+    "grade": "Lead_Developer",
+    "salary": 119908
+  },
+  {
+    "firstName": "Larry",
+    "lastName": "Smith",
+    "gender": "M",
+    "email": "ycase@hotmail.com",
+    "birthDate": "1977-02-11",
+    "joiningDate": "2021-02-01",
+    "grade": "Lead_Developer",
+    "salary": 71016
+  },
+  {
+    "firstName": "Christina",
+    "lastName": "Phillips",
+    "gender": "F",
+    "email": "cindyward@yahoo.com",
+    "birthDate": "1947-09-26",
+    "joiningDate": "2024-11-16",
+    "grade": "Senior_Developer",
+    "salary": 98469
+  },
+  {
+    "firstName": "Vanessa",
+    "lastName": "Robinson",
+    "gender": "F",
+    "email": "jasoncarrillo@yahoo.com",
+    "birthDate": "1998-04-25",
+    "joiningDate": "2024-10-05",
+    "grade": "Analyst",
+    "salary": 94530
+  },
+  {
+    "firstName": "Rachel",
+    "lastName": "Cruz",
+    "gender": "F",
+    "email": "hernandezruth@yahoo.com",
+    "birthDate": "1913-10-02",
+    "joiningDate": "2021-07-07",
+    "grade": "Developer",
+    "salary": 61011
+  },
+  {
+    "firstName": "Shelly",
+    "lastName": "Freeman",
+    "gender": "F",
+    "email": "murraykathryn@yahoo.com",
+    "birthDate": "1970-01-05",
+    "joiningDate": "2023-04-17",
+    "grade": "Intern",
+    "salary": 102823
+  },
+  {
+    "firstName": "Emma",
+    "lastName": "Kaiser",
+    "gender": "F",
+    "email": "charris@gmail.com",
+    "birthDate": "2017-05-14",
+    "joiningDate": "2023-09-05",
+    "grade": "Architect",
+    "salary": 60699
+  },
+  {
+    "firstName": "Renee",
+    "lastName": "Prince",
+    "gender": "F",
+    "email": "zoneill@gmail.com",
+    "birthDate": "1939-11-20",
+    "joiningDate": "2024-11-28",
+    "grade": "Intern",
+    "salary": 66393
+  },
+  {
+    "firstName": "Lisa",
+    "lastName": "Johnson",
+    "gender": "F",
+    "email": "tgiles@yahoo.com",
+    "birthDate": "2005-05-12",
+    "joiningDate": "2023-05-17",
+    "grade": "Intern",
+    "salary": 106586
+  },
+  {
+    "firstName": "Micheal",
+    "lastName": "Logan",
+    "gender": "M",
+    "email": "garyjackson@hotmail.com",
+    "birthDate": "1962-02-10",
+    "joiningDate": "2024-08-31",
+    "grade": "Manager",
+    "salary": 106583
+  },
+  {
+    "firstName": "Jennifer",
+    "lastName": "Wolf",
+    "gender": "F",
+    "email": "amy23@yahoo.com",
+    "birthDate": "2010-06-14",
+    "joiningDate": "2025-03-22",
+    "grade": "Lead_Developer",
+    "salary": 78656
+  },
+  {
+    "firstName": "Melissa",
+    "lastName": "Hunter",
+    "gender": "F",
+    "email": "gmorrison@yahoo.com",
+    "birthDate": "1972-02-23",
+    "joiningDate": "2021-08-04",
+    "grade": "Senior_Developer",
+    "salary": 105764
+  },
+  {
+    "firstName": "Richard",
+    "lastName": "Jr.",
+    "gender": "M",
+    "email": "dennisjohnson@yahoo.com",
+    "birthDate": "1983-06-06",
+    "joiningDate": "2023-05-29",
+    "grade": "Architect",
+    "salary": 110516
+  },
+  {
+    "firstName": "Mathew",
+    "lastName": "Gallegos",
+    "gender": "M",
+    "email": "udrake@hotmail.com",
+    "birthDate": "1970-06-07",
+    "joiningDate": "2024-08-09",
+    "grade": "Architect",
+    "salary": 81944
+  },
+  {
+    "firstName": "John",
+    "lastName": "Nelson",
+    "gender": "M",
+    "email": "hickmanchristopher@hotmail.com",
+    "birthDate": "1987-03-01",
+    "joiningDate": "2021-10-17",
+    "grade": "Architect",
+    "salary": 99572
+  },
+  {
+    "firstName": "Michelle",
+    "lastName": "Potts",
+    "gender": "F",
+    "email": "angelawhitney@gmail.com",
+    "birthDate": "2001-01-07",
+    "joiningDate": "2020-09-23",
+    "grade": "Analyst",
+    "salary": 64833
+  },
+  {
+    "firstName": "Alejandro",
+    "lastName": "Kaiser",
+    "gender": "M",
+    "email": "daniellane@yahoo.com",
+    "birthDate": "1987-05-22",
+    "joiningDate": "2020-12-15",
+    "grade": "Architect",
+    "salary": 78788
+  },
+  {
+    "firstName": "Christy",
+    "lastName": "Tanner",
+    "gender": "F",
+    "email": "baxternicholas@yahoo.com",
+    "birthDate": "1957-04-14",
+    "joiningDate": "2021-03-02",
+    "grade": "Lead_Developer",
+    "salary": 86183
+  },
+  {
+    "firstName": "Kimberly",
+    "lastName": "Thomas",
+    "gender": "F",
+    "email": "henryjeffrey@hotmail.com",
+    "birthDate": "1913-09-14",
+    "joiningDate": "2021-04-18",
+    "grade": "Lead_Developer",
+    "salary": 99552
+  },
+  {
+    "firstName": "Nicholas",
+    "lastName": "Brown",
+    "gender": "M",
+    "email": "erin98@yahoo.com",
+    "birthDate": "1973-10-13",
+    "joiningDate": "2024-09-09",
+    "grade": "Analyst",
+    "salary": 107617
+  },
+  {
+    "firstName": "Christian",
+    "lastName": "Cummings",
+    "gender": "M",
+    "email": "williamsmargaret@gmail.com",
+    "birthDate": "1912-03-18",
+    "joiningDate": "2020-05-19",
+    "grade": "Lead_Developer",
+    "salary": 74979
+  },
+  {
+    "firstName": "Tony",
+    "lastName": "Brooks",
+    "gender": "M",
+    "email": "djohnson@gmail.com",
+    "birthDate": "1924-04-08",
+    "joiningDate": "2024-04-07",
+    "grade": "Lead_Developer",
+    "salary": 110662
+  },
+  {
+    "firstName": "Bobby",
+    "lastName": "Juarez",
+    "gender": "M",
+    "email": "boydcarlos@hotmail.com",
+    "birthDate": "1931-06-19",
+    "joiningDate": "2024-07-03",
+    "grade": "Lead_Developer",
+    "salary": 70594
+  },
+  {
+    "firstName": "Dustin",
+    "lastName": "Torres",
+    "gender": "M",
+    "email": "marshallvanessa@yahoo.com",
+    "birthDate": "2020-05-09",
+    "joiningDate": "2023-03-26",
+    "grade": "Lead_Developer",
+    "salary": 65892
+  },
+  {
+    "firstName": "Kenneth",
+    "lastName": "Clayton",
+    "gender": "M",
+    "email": "andrew61@hotmail.com",
+    "birthDate": "1943-01-28",
+    "joiningDate": "2024-06-23",
+    "grade": "Intern",
+    "salary": 55504
+  },
+  {
+    "firstName": "Denise",
+    "lastName": "Jones",
+    "gender": "F",
+    "email": "dyates@hotmail.com",
+    "birthDate": "1943-10-31",
+    "joiningDate": "2024-03-29",
+    "grade": "Lead_Developer",
+    "salary": 99036
+  },
+  {
+    "firstName": "Alexandria",
+    "lastName": "Smith",
+    "gender": "F",
+    "email": "lambertwayne@gmail.com",
+    "birthDate": "2006-02-18",
+    "joiningDate": "2022-09-26",
+    "grade": "Manager",
+    "salary": 97949
+  },
+  {
+    "firstName": "Eric",
+    "lastName": "Wagner",
+    "gender": "M",
+    "email": "brettharrison@hotmail.com",
+    "birthDate": "1985-01-17",
+    "joiningDate": "2022-03-09",
+    "grade": "Analyst",
+    "salary": 97666
+  },
+  {
+    "firstName": "Vicki",
+    "lastName": "Mercado",
+    "gender": "F",
+    "email": "anthonyhickman@hotmail.com",
+    "birthDate": "2011-12-08",
+    "joiningDate": "2021-04-11",
+    "grade": "Lead_Developer",
+    "salary": 87957
+  },
+  {
+    "firstName": "Kyle",
+    "lastName": "Johnson",
+    "gender": "M",
+    "email": "mdavis@yahoo.com",
+    "birthDate": "2015-01-21",
+    "joiningDate": "2021-08-04",
+    "grade": "Lead_Developer",
+    "salary": 73891
+  },
+  {
+    "firstName": "Mark",
+    "lastName": "Baxter",
+    "gender": "M",
+    "email": "royjames@gmail.com",
+    "birthDate": "1960-11-08",
+    "joiningDate": "2024-04-15",
+    "grade": "Analyst",
+    "salary": 116502
+  },
+  {
+    "firstName": "Kristen",
+    "lastName": "Lynn",
+    "gender": "F",
+    "email": "micheal25@hotmail.com",
+    "birthDate": "1916-12-30",
+    "joiningDate": "2020-12-31",
+    "grade": "Lead_Developer",
+    "salary": 110957
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Hernandez",
+    "gender": "M",
+    "email": "katherine64@yahoo.com",
+    "birthDate": "1961-05-16",
+    "joiningDate": "2021-11-22",
+    "grade": "Developer",
+    "salary": 53315
+  },
+  {
+    "firstName": "Darrell",
+    "lastName": "White",
+    "gender": "M",
+    "email": "crystal16@yahoo.com",
+    "birthDate": "1984-07-27",
+    "joiningDate": "2022-10-29",
+    "grade": "Senior_Developer",
+    "salary": 80193
+  },
+  {
+    "firstName": "Jacob",
+    "lastName": "Taylor",
+    "gender": "M",
+    "email": "mitchelldominique@gmail.com",
+    "birthDate": "1982-06-11",
+    "joiningDate": "2021-05-05",
+    "grade": "Senior_Developer",
+    "salary": 118594
+  },
+  {
+    "firstName": "Scott",
+    "lastName": "Guerra",
+    "gender": "M",
+    "email": "christophernelson@hotmail.com",
+    "birthDate": "1993-05-17",
+    "joiningDate": "2022-07-12",
+    "grade": "Analyst",
+    "salary": 74945
+  },
+  {
+    "firstName": "Nancy",
+    "lastName": "Hansen",
+    "gender": "F",
+    "email": "eddiedalton@yahoo.com",
+    "birthDate": "1969-01-19",
+    "joiningDate": "2024-09-19",
+    "grade": "Architect",
+    "salary": 92046
+  },
+  {
+    "firstName": "Alexandra",
+    "lastName": "Burnett",
+    "gender": "F",
+    "email": "brandon07@gmail.com",
+    "birthDate": "1939-12-16",
+    "joiningDate": "2025-02-10",
+    "grade": "Analyst",
+    "salary": 64441
+  },
+  {
+    "firstName": "Jordan",
+    "lastName": "Banks",
+    "gender": "M",
+    "email": "fharris@yahoo.com",
+    "birthDate": "1976-04-20",
+    "joiningDate": "2022-06-15",
+    "grade": "Senior_Developer",
+    "salary": 59070
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Patel",
+    "gender": "F",
+    "email": "nicole45@gmail.com",
+    "birthDate": "1921-12-06",
+    "joiningDate": "2022-03-25",
+    "grade": "Senior_Developer",
+    "salary": 115796
+  },
+  {
+    "firstName": "Patricia",
+    "lastName": "Jones",
+    "gender": "F",
+    "email": "pamelarios@hotmail.com",
+    "birthDate": "1980-05-08",
+    "joiningDate": "2024-04-14",
+    "grade": "Manager",
+    "salary": 60583
+  },
+  {
+    "firstName": "Johnny",
+    "lastName": "Tran",
+    "gender": "M",
+    "email": "dylan36@hotmail.com",
+    "birthDate": "1930-05-25",
+    "joiningDate": "2023-08-25",
+    "grade": "Analyst",
+    "salary": 93517
+  },
+  {
+    "firstName": "Thomas",
+    "lastName": "Perez",
+    "gender": "M",
+    "email": "igarrett@gmail.com",
+    "birthDate": "1969-10-12",
+    "joiningDate": "2022-10-17",
+    "grade": "Lead_Developer",
+    "salary": 107913
+  },
+  {
+    "firstName": "Stacey",
+    "lastName": "Zimmerman",
+    "gender": "F",
+    "email": "sgraham@hotmail.com",
+    "birthDate": "1969-03-14",
+    "joiningDate": "2023-01-22",
+    "grade": "Intern",
+    "salary": 71936
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Wright",
+    "gender": "M",
+    "email": "shelbysalazar@gmail.com",
+    "birthDate": "1980-01-23",
+    "joiningDate": "2024-06-27",
+    "grade": "Architect",
+    "salary": 58658
+  }
 ]

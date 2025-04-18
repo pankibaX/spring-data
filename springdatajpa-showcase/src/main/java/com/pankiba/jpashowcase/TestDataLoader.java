@@ -19,20 +19,20 @@ import lombok.extern.slf4j.Slf4j;
 
 @Component
 @Slf4j
-public class TestDataLoader implements CommandLineRunner{
-	
+public class TestDataLoader implements CommandLineRunner {
+
 	@Autowired
 	private EmployeeService employeeService;
-	
+
 	@Autowired
 	private ResourceLoader resourceLoader;
-	
+
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
-	
+
 	@Override
 	public void run(String... args) throws Exception {
-		
+
 		log.info("Loading test data.....");
 
 		Resource resource = resourceLoader.getResource("classpath:test-data.json");
@@ -44,20 +44,19 @@ public class TestDataLoader implements CommandLineRunner{
 					new TypeReference<List<Employee>>() {
 					});
 
-			log.info("Loading test data from : " + resource.getFilename() + " @ "
-					+ resource.getFile().getAbsolutePath() + " which is as follows - ");
+			log.info("Loading test data from : " + resource.getFilename() + " @ " + resource.getFile().getAbsolutePath()
+					+ " which is as follows - ");
 
 			employeeService.saveEmployees(employeeList);
-			
-			DisplayTableUtil.printSelect(jdbcTemplate, "SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, GENDER, EMAIL, BIRTH_DATE, JOINING_DATE, GRADE, SALARY FROM EMPLOYEE");
 
+			DisplayTableUtil.printSelect(jdbcTemplate,
+					"SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, GENDER, EMAIL, BIRTH_DATE, JOINING_DATE, GRADE, SALARY FROM EMPLOYEE");
 
 		} catch (Exception exception) {
 			log.error("Error while loading data from josn file");
 			exception.printStackTrace();
 		}
 
-	
 	}
 
 }

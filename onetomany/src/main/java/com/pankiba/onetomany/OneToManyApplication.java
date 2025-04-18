@@ -13,17 +13,16 @@ import lombok.extern.slf4j.Slf4j;
 public class OneToManyApplication {
 
 	public static void main(String[] args) {
-		
+
 		SpringApplication springApplication = new SpringApplication(OneToManyApplication.class);
 
 		/*
-		 * setting default profile as DEV if no other profile is configured. This needs
-		 * to be done before calling run method on SpringApplication
+		 * setting default profile as DEV if no other profile is configured. This needs to be done before calling run
+		 * method on SpringApplication
 		 */
 		ApplicationUtils.setDefautlProfile(springApplication);
 		Environment environment = springApplication.run(args).getEnvironment();
 		ApplicationUtils.logApplicationStartup(environment);
 	}
-
 
 }

@@ -15,7 +15,6 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class OneToOneSharedPkApplication {
 
-
 	private static final String SPRING_PROFILE_DEFAULT = "spring.profiles.default";
 	public static final String DEVELOPMENT_PROFILE = "dev";
 
@@ -31,6 +30,5 @@ public class OneToOneSharedPkApplication {
 
 		ApplicationUtils.logApplicationStartup(environment);
 	}
-
 
 }
